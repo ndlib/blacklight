@@ -1,23 +1,2 @@
 en:
-    welcome: "Welcome!"
-    bookmarks:
-        add:
-            success: 'Successfully added bookmarks.'
-            failure:  'Sorry, there was a problem saving the bookmarks.'
-        remove:
-            success: 'Successfully removed bookmarks.'
-            failure: 'Sorry, there was a problem removing the bookmarks.'
-        clear:
-            success: "Successfully cleared bookmarks."
-            failure: 'Sorry, there was a problem clearing your bookmarks.'
-        need_login: 'Please log in to manage and view your bookmarks.'
-        
-    feedback:
-        valid_name: 'A valid name is required'
-        valid_email: 'A valid email address is required'
-        need_message: 'A message is required'
-        
-    folder:
-        add:
-            success: "%{params[:title] || 'Item'} successfully added to Folder"
-           
+  welcome: "Welcome!"
