@@ -163,12 +163,6 @@ EOF
       copy_file "config/compass.rb", "config/compass.rb"
   end
 
-  def enable_internationalization
-    gsub_file 'config/application.rb', /#\s*config.i18n/, 'config.i18n'
-    
-
-  end
-
   private  
   
   def better_migration_template (file)
