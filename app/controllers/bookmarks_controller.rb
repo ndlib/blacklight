@@ -56,9 +56,9 @@ class BookmarksController < ApplicationController
       success = false unless current_user.bookmarks.create(bookmark)
     end
     if @bookmarks.length > 0 && success
-      flash[:notice] = I18n.t('bookmarks.add.success')      
+      flash[:notice] = I18n.t('bookmarks.add.success', :count => @bookmarks.length)
     elsif @bookmarks.length > 0
-      flash[:error] = I18n.t('bookmarks.add.failure')
+      flash[:error] = I18n.t('bookmarks.add.failure', :count => @bookmarks.length)
     end
     
     redirect_to :back

@@ -3,13 +3,15 @@ en:
     and: "and"
     bookmarks:
         add:
-            success: 'Successfully added bookmarks.'
+            success: 
+              one: 'Successfully added bookmark.'
+              other: 'Successfully added bookmarks.'
             failure:  'Sorry, there was a problem saving the bookmarks.'
         remove:
-            success: 'Successfully removed bookmarks.'
+            success: 'Successfully removed bookmark.'
             failure: 'Sorry, there was a problem removing the bookmarks.'
         clear:
-            success: "Successfully cleared bookmarks."
+            success: "Cleared your bookmarks."
             failure: 'Sorry, there was a problem clearing your bookmarks.'
         need_login: 'Please log in to manage and view your bookmarks.'
         
@@ -38,7 +40,7 @@ en:
             success: "Successfully saved your search."
             failure: "There was a problem saving your search."
         remove:
-            success: "Successfully removed your search."
+            success: "Successfully removed that saved search."
             failure: "There was a problem removing your search."
         clear:
             success: "Cleared your saved searches."
