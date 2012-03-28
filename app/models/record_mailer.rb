@@ -6,9 +6,9 @@ class RecordMailer < ActionMailer::Base
     #raise ArgumentError.new("RecordMailer#email_record only works with documents with a #to_marc") unless document.respond_to?(:to_marc)
         
     if documents.size == 1
-      subject = "Item Record: #{documents.first.to_semantic_values[:title] rescue 'N/A'}"
+      subject = I18n.t('record_mailer.item_record.singular') + ": #{documents.first.to_semantic_values[:title] rescue 'N/A'}"
     else
-      subject = "Item records"
+      subject = I18n.t('record_mailer.item_record.plural')
     end
 
     @documents      = documents
