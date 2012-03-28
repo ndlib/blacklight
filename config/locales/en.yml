@@ -1,13 +1,18 @@
 en:
     welcome: "Welcome!"
     and: "and"
+    or: "or"
     bookmarks:
+        add_many:
+            button: 'Add to Bookmarks'
         add:
+            button: 'Bookmark'
             success: 
               one: 'Successfully added bookmark.'
               other: 'Successfully added bookmarks.'
             failure:  'Sorry, there was a problem saving the bookmarks.'
         remove:
+            button: 'Remove bookmark'
             success: 'Successfully removed bookmark.'
             failure: 'Sorry, there was a problem removing the bookmarks.'
         clear:
@@ -87,13 +92,24 @@ en:
         entry_pagination_info:
             one: "Showing the only item from your search."
             other: "Showing item <b>%{current} of %{total}</b> from your search."
-        
+        documents:
+            counter: "%{counter}. "
         facets:
             count: "(%{number})"
             selected:
                 remove: "[remove]"
         filters:
+            title: "You searched for:"
             label: "%{label}:"
+            remove:
+                value: "Remove constraint %{value}"
+                label_value: "Remove constraint %{label}: %{value}"
     entry_name:
       default: 'entry'
-
+      
+    citation:
+        format:
+            mla: "MLA"
+            apa: "APA"
+            chicago: "Chicago"
+    did_you_mean: "Did you mean to type: %{options}?"
