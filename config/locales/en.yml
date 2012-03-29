@@ -33,11 +33,14 @@ en:
             success: "%{title} successfully removed from selected items"
         clear:
             success: "Selected items cleared."
-        tools:
-            cite: "Cite"
-            endnote: "Export to EndNote"
-            email: "Email"
-            clear: "Clear"
+    tools:
+        cite: "Cite"
+        endnote: "Export to EndNote"
+        refworks: "Export to Refworks"
+        email: "Email"
+        sms: "SMS This"
+        librarian_view: "Librarian View"
+        clear: "Clear"
             
     
     saved_searches:
@@ -83,6 +86,21 @@ en:
         next: 'Next »'
         
     search:
+        per_page: 
+            label: "Show %{select} per_page"
+            title: "Number of results to display per page"
+            submit: "update"
+        sort: 
+            label: "Sort by %{select}"
+            submit: "sort results"
+        form:
+            search_field:
+                label: "in"
+                title: "Targeted search options"
+            q: "Search "
+            submit: "search"
+        pagination:
+            title: "Results navigation"
         pagination_info:
             no_items_found: "No %{entry_name} found"
             single_item_found: "Displaying <b>1</b> %{entry_name}"
@@ -94,6 +112,9 @@ en:
             other: "Showing item <b>%{current} of %{total}</b> from your search."
         documents:
             counter: "%{counter}. "
+        folder:
+            select: "Select"
+            unselect: "Unselect"    
         facets:
             title: "Limit your search"
             sort:
@@ -107,13 +128,22 @@ en:
             title: "Email This"
             to: "Email:"
             message: "Message:"
-            send: "Send"
+            submit: "Send"
+        sms:
+            title: "SMS This"
+            to: "Phone Number:"
+            carrier: "Carrier"
+            carrier_prompt: "Please select your carrier"
+            submit: "Send"
         filters:
             title: "You searched for:"
             label: "%{label}:"
             remove:
                 value: "Remove constraint %{value}"
                 label_value: "Remove constraint %{label}: %{value}"
+        librarian_view:
+            title: "Librarian View"
+            leader: "LEADER %{leader}"
     entry_name:
       default: 'entry'
       
