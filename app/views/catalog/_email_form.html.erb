@@ -7,5 +7,5 @@
   <% @documents.each do |doc| %>
     <%=hidden_field_tag "id[]", doc.get(:id)%>
   <% end %>
-  <%= submit_tag t('search.email.send') %>
+  <%= submit_tag t('search.email.submit') %>
 <% end %>
