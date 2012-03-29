@@ -127,16 +127,26 @@ en:
             selected:
                 remove: "[remove]"
         email:
-            title: "Email This"
-            to: "Email:"
-            message: "Message:"
-            submit: "Send"
+            form:
+                title: "Email This"
+                to: "Email:"
+                message: "Message:"
+                submit: "Send"
+            text:
+                title: "Title: %{value}"
+                author: "Author: %{value}"
+                format: "Format: %{value}"
+                language: "Language: %{value}"
         sms:
-            title: "SMS This"
-            to: "Phone Number:"
-            carrier: "Carrier"
-            carrier_prompt: "Please select your carrier"
-            submit: "Send"
+            form:
+                title: "SMS This"
+                to: "Phone Number:"
+                carrier: "Carrier"
+                carrier_prompt: "Please select your carrier"
+                submit: "Send"
+            text:
+                title: "%{value}"
+                author: " by %{value}"
         filters:
             title: "You searched for:"
             label: "%{label}:"
