@@ -17,11 +17,11 @@
 
   <div class="sort_options">
     <% if @pagination.sort == 'index' -%>
-      <span class="disabled az"><%= t('pagination.sort.index') %></span><%= link_to_unless(@pagination.sort == 'count', t('pagination.sort.count'), 
+      <span class="disabled az"><%= t('search.facets.sort.index') %></span><%= link_to_unless(@pagination.sort == 'count', t('search.facets.sort.count'), 
         @pagination.params_for_resort_url('count', params), :class => "sort_change numeric") %>
     <% elsif @pagination.sort == 'count' -%>
-      <%=  link_to(t('pagination.sort.index'), @pagination.params_for_resort_url('index', params), 
-        :class => "sort_change az") %><span class="disabled numeric"><%= t('pagination.sort.count') %></span>
+      <%=  link_to(t('search.facets.sort.index'), @pagination.params_for_resort_url('index', params), 
+        :class => "sort_change az") %><span class="disabled numeric"><%= t('search.facets.sort.count') %></span>
     <% end -%>    
   </div>
 
