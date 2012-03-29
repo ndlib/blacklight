@@ -87,6 +87,7 @@ en:
         
     search:
         title: "%{application_name} Search Results"
+        search_results: "Search Results"
         per_page: 
             label: "Show %{select} per page"
             title: "Number of results to display per page"
