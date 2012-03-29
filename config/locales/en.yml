@@ -95,9 +95,19 @@ en:
         documents:
             counter: "%{counter}. "
         facets:
+            title: "Limit your search"
+            sort:
+              count: "Numerical Sort"
+              index: "A-Z Sort"
             count: "(%{number})"
+            more: "more »"
             selected:
                 remove: "[remove]"
+        email:
+            title: "Email This"
+            to: "Email:"
+            message: "Message:"
+            send: "Send"
         filters:
             title: "You searched for:"
             label: "%{label}:"
@@ -113,3 +123,4 @@ en:
             apa: "APA"
             chicago: "Chicago"
     did_you_mean: "Did you mean to type: %{options}?"
+
